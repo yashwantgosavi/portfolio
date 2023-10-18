@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient($blue-950, $black-950);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 1000;
+    h1{
+        img{
+            height: fit-content;
+            width: fit-content;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    a{
+        color: $blue-50;
+    }
+}
