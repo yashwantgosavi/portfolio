@@ -42,6 +42,7 @@ table {
 
 body{
 background-color: $bg;
+overflow-x: hidden;
 }
 
 a{
@@ -57,7 +58,9 @@ body::-webkit-scrollbar {
 	width: 0.4em;
   }
 
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
 	background-color: $black-700;
 	border-radius: 10px;
   }
+
+  

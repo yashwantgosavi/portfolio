@@ -1,3 +1,31 @@
-#hero{
-    height: 90vh;
+#hero {
+    height: 80vh;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+
+    div {
+        width: 50%;
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    // div:first-child{
+    //     h6{
+
+    //     }
+    // }
+
+}
+
+#companies {
+    height: 100px;
+    background-color: $grey;
+    width: 100vw;
+    z-index: 10;
+    position: relative;
 }

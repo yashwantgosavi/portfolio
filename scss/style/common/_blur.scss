@@ -1,12 +1,5 @@
-@mixin blur(){
-width: 300px;
-height: 300px;
-flex-shrink: 0;
-border-radius:50%;
-filter: blur(205px);
-}
-
-@mixin blueBlur(){
-@include blur();
-background: var($blue-700);
+@mixin glass1(){
+    background: linear-gradient(rgb(64, 68, 74, 0.1), rgb(16, 17, 19, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }

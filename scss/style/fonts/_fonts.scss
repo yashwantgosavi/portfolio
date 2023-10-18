@@ -1,11 +1,21 @@
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(Helvetica-Bold.ttf) format('ttf');
-  }
+  font-family: 'Helvetica';
+  src: url('./Helvetica.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @import url();
 
 
+* {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+p,
+a {
+  color: $black-500;
+}
 
 
 // $h1:;
@@ -13,7 +23,5 @@
 // $h3:;
 // $h4:;
 // $h5:;
-// $h6:;
+$h6: $black-800;
 // $p:;
-
-
