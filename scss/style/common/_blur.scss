@@ -1,5 +1,16 @@
-@mixin glass1(){
+@mixin glass1() {
     background: linear-gradient(rgb(64, 68, 74, 0.1), rgb(16, 17, 19, 0.1));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+@mixin blurPatch() {
+    width: 200px;
+    height: 200px;
+    background-color: $blue-500;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    filter: blur(150px);
+
 }

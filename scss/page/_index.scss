@@ -1,31 +1,111 @@
-#hero {
-    height: 80vh;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 30px;
+header {
+    padding-top: 6rem;
 
-    div {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    #left,
+    #right {
         width: 50%;
+    }
 
-        &:last-child {
-            text-align: right;
+    #right {
+        text-align: right;
+        position: relative;
+
+        #trustedBy {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            border-image: linear-gradient(rgb(98, 109, 120, 0.5), rgb(98, 109, 120, 0.2), 36deg);
+
+            .blur {
+                width: fit-content;
+                height: auto;
+                backdrop-filter: blur(10px);
+                border-radius: 25px;
+                padding: 20px 40px;
+
+                p {
+                    color: $white;
+                }
+
+                .row {
+                    span {
+                        background-color: $white;
+                        width: 40px;
+                        height: 40px;
+                        color: $bg;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+
+
+            }
+
+            .greenPatch {
+                background-color: #adff2f;
+                width: 15px;
+                height: 50px;
+                position: absolute;
+                top: 30px;
+                right: -5px;
+                z-index: -1;
+            }
         }
     }
 
-    // div:first-child{
-    //     h6{
+    h2 {
+        color: $white;
+        font-size: 64px;
+        margin-bottom: 24px;
 
-    //     }
-    // }
+        span {
+            background: linear-gradient(92deg, #32B0FE 25.41%, #062A4B 153.25%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 
+    p {
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+
+    i {
+        font-family: 'Kalam', cursive;
+        font-size: 24px;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+    }
+
+    .heyThere {
+        position: relative;
+
+        img:last-child {
+            position: absolute;
+            top: 0px;
+        }
+    }
+
+    .blurPatch {
+        @include blurPatch();
+        left: 40%;
+        top: 40%;
+    }
 }
 
-#companies {
+#clientLogo {
+    width: 100vw;
     height: 100px;
     background-color: $grey;
-    width: 100vw;
-    z-index: 10;
-    position: relative;
 }
