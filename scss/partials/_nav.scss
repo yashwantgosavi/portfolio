@@ -11,15 +11,15 @@ nav {
         }
     }
 
-    #navbarSupportedContent {
-        padding-left: 3rem !important;
-    }
 
     li {
         margin: 0px 1rem;
     }
+    a,i{
+        color: $black-500 !important;
+    }
 
-    form {
+    form {  
         column-gap: 15px;
 
         a {
@@ -41,9 +41,15 @@ nav {
             }
 
             a:hover {
-                color: $white;
+                color: $white !important;
                 text-decoration: none;
             }
         }
     }
+}
+
+.navbar-toggler{
+    border-color: $black-500;
+    background-color: transparent;
+  
 }

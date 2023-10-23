@@ -19,20 +19,52 @@ header {
             position: absolute;
             top: 35%;
             left: 0;
-            border-image: linear-gradient(rgb(98, 109, 120, 0.5), rgb(98, 109, 120, 0.2), 36deg);
+
 
             .blur {
                 width: fit-content;
                 height: auto;
                 backdrop-filter: blur(10px);
-                border-radius: 25px;
                 padding: 20px 40px;
+                border-radius: 25px;
+
+                // img {
+                //     position: absolute;
+
+                //     &:nth-child(1) {
+                //         left: 0;
+                //     }
+
+                //     &:nth-child(2) {
+                //         left: 35px;
+                //     }
+
+                //     &:nth-child(3) {
+                //         left: 65px;
+                //     }
+
+                //     &:nth-child(4) {
+                //         left: 95px;
+                //     }
+
+                //     &:nth-child(5) {
+                //         left: 130px;
+                //     }
+                // }
 
                 p {
                     color: $white;
+                    margin-bottom: 1rem;
+                }
+
+                tr {
+                    display: flex;
+                    align-items: center;
                 }
 
                 .row {
+                    position: relative;
+
                     span {
                         background-color: $white;
                         width: 40px;
@@ -42,7 +74,6 @@ header {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
                     }
                 }
 
@@ -79,19 +110,25 @@ header {
         line-height: 1.6rem;
     }
 
-    
+
 
     .heyThere {
         position: relative;
+        align-items: center;
+        justify-content: flex-start;
+
         p {
             font-family: 'Kalam', cursive;
             font-size: 24px;
-            margin-bottom: 1rem;
+            margin: 0px 15px;
             line-height: 3rem;
         }
-        img:last-child {
-            position: absolute;
+
+        div {
+            position: relative;
+
             top: 0px;
+            left: 0;
         }
     }
 
@@ -106,4 +143,14 @@ header {
     width: 100vw;
     height: 100px;
     background-color: $grey;
+    position: relative;
+    z-index: 100;
+}
+
+
+header {
+   .heroImg {
+        position: relative;
+        bottom: -25px;
+    }
 }
