@@ -1,0 +1,11 @@
+@mixin rotateHeadings(){
+    font-size: 2rem;
+    color: $grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    rotate: 90deg;
+    display: inline-block;
+    position: absolute;
+    right: -10%;
+    top: 50%;
+}
