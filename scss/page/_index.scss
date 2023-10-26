@@ -335,3 +335,87 @@ header {
         color: $blue;
     }
 }
+
+
+// About ME
+//about me 
+#aboutUs {
+    .container {
+        h3 {
+            color: $blue;
+            padding-bottom: 20px;
+        }
+
+        form {
+            margin: 23px 0px;
+
+            button {
+                outline: 1px solid $black-900;
+                border-radius: 30px;
+                border: 1px solid $black-900;
+                color: $black-50;
+                background: rgb(9, 9, 121);
+                background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(2, 0, 36, 0) 40%);
+
+                i {
+                    color: $black-50;
+                }
+            }
+        }
+
+        span {
+            color: $green;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        //accordion
+
+        #accordionExample {
+
+            .card {
+                background-color: $grey;
+                border-radius: 20px;
+                margin-bottom: 10px;
+
+                .card-header {
+                    .btn:focus {
+                        outline: 0;
+                        box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0);
+                    }
+
+                    .btn-link:hover {
+                        color: $white;
+                        text-decoration: none;
+                    }
+
+                    button {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 20px;
+
+
+                        p {
+                            display: inline;
+                            font-size: 15px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+#achievements {
+    .w-75 {
+        h4{
+            color: $white;
+        }
+        p {
+            margin: 2% 0px;
+            line-height: 25px;
+        }
+    }
+}

@@ -105,7 +105,22 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #footer {
+    .footer {
+        .circle {
+            div {
+                margin: auto !important;
+            }
+
+            h5 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -165,12 +180,25 @@
   .col-lg-6 {
     flex: 0 0 100%;
   }
+  #footer {
+    .footer {
+        .circle {
+            div {
+                margin: auto !important;
+                text-align: center;
+                background-color: red;
+            }
+
+            h5 {
+                margin: auto !important;
+            }
+        }
+    }
 }
 
-// #res {
-//   display: flex;
-//   justify-content: center;
-// }
+
+}
+
 
 @media (min-width:1200px)and (max-width:1400px) {
 
