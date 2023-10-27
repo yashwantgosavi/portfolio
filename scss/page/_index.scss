@@ -350,12 +350,8 @@ header {
             margin: 23px 0px;
 
             button {
-                outline: 1px solid $black-900;
-                border-radius: 30px;
-                border: 1px solid $black-900;
-                color: $black-50;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(2, 0, 36, 0) 40%);
+                @include button();
+                color: $white;
 
                 i {
                     color: $black-50;
@@ -377,6 +373,13 @@ header {
                 background-color: $grey;
                 border-radius: 20px;
                 margin-bottom: 10px;
+
+
+
+                .card-body {
+                    margin: 0px 15px;
+                    line-height: 24px;
+                }
 
                 .card-header {
                     .btn:focus {
@@ -410,9 +413,10 @@ header {
 
 #achievements {
     .w-75 {
-        h4{
+        h4 {
             color: $white;
         }
+
         p {
             margin: 2% 0px;
             line-height: 25px;

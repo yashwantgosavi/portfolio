@@ -1,0 +1,14 @@
+@mixin button(){
+ 
+        border-radius: 25px !important;
+        padding: 10px 16px !important;
+
+        a {
+            color: $white;
+        }
+
+        a:hover {
+            color: $white !important;
+            text-decoration: none;
+        }
+    }

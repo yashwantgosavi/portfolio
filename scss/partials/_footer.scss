@@ -1,73 +1,93 @@
 //footer
-footer{
+footer {
     background-color: $black;
-    
-#footer {
-.f-patch .row{
-    background-color: $grey;
-    justify-content: space-between;
-    align-items: center;
-}
-    .footer {
-        .w-100{
-            display: flex;
-            justify-content: space-between;
-        }
-        .circle{
-            display: flex;
-            align-items: center;
-            div{
-                width: 25px;
-                height:25px;
-                background-color: $white;
-                display: inline-block;
-                border-radius: 50%;
-               
-            }
 
-            h5 {
-                display: inline;
-                margin-left:10px;
-                color: $white;
-            }
-
-        }
-        h2{
-            font-size: 3rem;
-            color: $white;
-            padding: 50px;
-            span{
-                color: #D5F60C;
-            }
-        }
-      
-      
-    }
-    .flogo{
-        
-        a{
-            display: flex;
-            align-items: center;
-            img{
-                width: 25px;
-            }
-            span{
-                margin-left: 10px;
-            }
-        }
-        
-    }
-    .social{
-        a{
-            background-color: #D5F60C;
-            padding: 10px;
+    .social {
+        a {
+            background-color: $blue;
+            padding: 12px;
             border-radius: 50px;
-            i{
+            margin: 10px;
+
+            i {
                 color: $black;
                 font-size: 20px;
             }
         }
     }
-  
-}
+
+    #footer {
+        .f-patch .row {
+            background-color: $grey;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer {
+            .w-100 {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .circle {
+                display: flex;
+                align-items: center;
+
+                div {
+                    width: 25px;
+                    height: 25px;
+                    background-color: $white;
+                    display: inline-block;
+                    border-radius: 50%;
+
+                }
+
+                h5 {
+                    display: inline;
+                    margin-left: 10px;
+                    color: $white;
+                }
+
+            }
+
+            h2 {
+                font-size: 3rem;
+                color: $white;
+                padding: 50px;
+
+                span {
+                    color: $green;
+                }
+            }
+
+            .workTogether {
+                display: flex;
+
+                div {
+                    background-color: $white;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        .flogo {
+
+            a {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 25px;
+                }
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+
+        }
+
+    }
 }

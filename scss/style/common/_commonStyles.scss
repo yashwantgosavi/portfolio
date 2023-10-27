@@ -145,9 +145,14 @@ body::-webkit-scrollbar-thumb {
 	background-color: $black-700;
 	border-radius: 10px;
 }
-
-
-
 .container {
 	max-width: 80% !important;
+}
+p {
+	line-height: 24px;
+}
+.card {
+	&:hover {
+		@include hoverBorder();
+	}
 }
