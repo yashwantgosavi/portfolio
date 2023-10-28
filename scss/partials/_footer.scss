@@ -24,6 +24,13 @@ footer {
         }
 
         .footer {
+            a{
+                @include button();
+                color: $white;
+                &:hover{
+                    border-color: $blue;
+                }
+            }
             .w-100 {
                 display: flex;
                 justify-content: space-between;
