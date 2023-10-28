@@ -1,0 +1,33 @@
+#socialLinks {
+    background-color: $blue;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 5000;
+    display: none;
+
+    #closeIcon {
+        color: $white;
+      font-size: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    h5 {
+        color: $white;
+    }
+
+    .row {
+        justify-content: space-around;
+    }
+
+    a i {
+        color: $white;
+    }
+}
+
+.visible {
+    display: block !important;
+}

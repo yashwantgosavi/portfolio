@@ -26,6 +26,9 @@ nav {
             padding: 1rem;
             border: $border-1;
             border-radius: 50%;
+            &:hover{
+                border-color: $blue;
+            }
         }
 
         a:last-child {
@@ -40,5 +43,4 @@ nav {
 .navbar-toggler{
     border-color: $black-500;
     background-color: transparent;
-  
 }

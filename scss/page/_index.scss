@@ -25,6 +25,10 @@ header {
             top: 35%;
             left: -6%;
 
+            span {
+                color: $white;
+            }
+
             .blur {
                 width: fit-content;
                 height: auto;
@@ -188,7 +192,9 @@ header {
 
 }
 
-
+marquee{
+background-color: $black-950;
+}
 
 // Services Section
 #services {
@@ -204,17 +210,18 @@ header {
 
         h5,
         a {
-            color: $white
+            color: $white;
         }
 
         a {
             background-color: transparent;
             border: none;
             padding: none;
+            color: $black-200;
         }
 
         img {
-            width: 30%; 
+            width: 30%;
             padding: 25px 0px 0px 25px;
         }
     }
@@ -426,5 +433,24 @@ header {
             margin: 2% 0px;
             line-height: 25px;
         }
+    }
+}
+
+
+#aboutUs {
+    position: relative;
+
+    .blurPatch {
+        @include blurPatch();
+        right: -13%;
+        top: 67%;
+        opacity: 0.8;
+    }
+
+    .rotateHeadings {
+        position: absolute;
+        rotate: 270deg !important;
+        right: 90%;
+        top: 65%;
     }
 }

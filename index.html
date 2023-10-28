@@ -12,7 +12,38 @@
     <meta name="Author" content="Yashwant Gosavi" />
     <meta name="copyrights" content="https://www.yashwebdesign.com" />
     <meta name="google-site-verification" content="WJI2xGmUm2wEwiQtp7_9pZgHJFaT4_4nH1W11m6Bp-g" />
-
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Yash Web Design",
+            "url": "https://yashwebdesign.com/",
+            "logo": "https://yashwebdesign.com/media/svg/logo.svg",
+            "description": "Transforming Ideas into Impactful Designs | We're your one-stop creative studio for web design, graphic design, UI-UX design, packaging design, brand design, and stunning portfolio website design. Discover how our innovation elevates your brand today. Best web designer in nashik | Web designer in nashik",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Dindori Road",
+                "addressLocality": "Nashik",
+                "addressRegion": "Maharashtra",
+                "postalCode": "422001",
+                "addressCountry": "india"
+            },
+            
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+91 7083233905",
+                    "contactType": "customer support"
+                }
+        ],
+            "sameAs": [
+                "https://www.facebook.com/yourcompany",
+                "https://twitter.com/yourcompany",
+                "https://www.linkedin.com/company/yourcompany",
+                "https://www.instagram.com/yourcompany"
+            ]
+        }
+    </script>
     <!-- links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
@@ -22,7 +53,8 @@
 </head>
 
 <body>
-<marquee behavior="scroll" direction="left">Website is Under development</marquee>
+
+    <marquee behavior="scroll" direction="left">website is in under development </marquee>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -44,20 +76,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#achievements">Achievements</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                    <button class="btn btn-outline-primary   my-2 my-sm-0">
+                    <a href="tel: 7083233905"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" class="links"><i class="fa-solid fa-link"></i>
+
+                    </a>
+                    <button class="btn btn-outline-primary my-2 my-sm-0">
                         <a href="mailto: yashwantgosavi0@gmail.com">Hire Me</a>
                 </form>
             </div>
         </div>
     </nav>
-    <main>
+    <main> <!-- Social Links -->
+        <section id="socialLinks">
+            <h5 class="mb-4">Follow Me: <i class="fa-solid fa-xmark ml-5" id="closeIcon"></i></h5>
+            <div class="row"> <a href="https://github.com/yashwantgosavi"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yashwant-gosavi/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/yash_webdesign/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:info@yashwebdesign.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+
         <header>
             <div class="container" id="res">
                 <div class="row">
@@ -81,11 +124,13 @@
                         </p>
                     </div>
                     <div id="right" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <img src="media/png/heroImg.png" alt="yashwant gosavi" class="Image of yashwant gosavi" />
+                        <img src="media/png/heroImg.png" alt="yashwant gosavi" class="heroImg" />
                         <!-- Trusted By -->
                         <section id="trustedBy">
                             <div class="blur">
-                                <p>Trusted By 50+ Clients</p>
+                                <div class="counter">
+                                    <p>Trusted by <span id="count">0</span>+ clients</p>
+                                </div>
                                 <div class="row">
                                     <table>
                                         <tbody>
@@ -248,17 +293,12 @@
 
         <!-- about me -->
         <section id="aboutUs" class="text-center">
+            <h3 class="rotateHeadings">About Me</h3>
+            <div class="blurPatch"></div>
             <div class="container">
                 <div>
                     <h3>ABOUT ME </h3>
-                    <p class="w-75 mx-auto"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                        leap
-                        into</p>
+                    <p class="w-75 mx-auto"> With over 3+ years of experience in web design and development, I bring a passion for creating user-centric websites that seamlessly blend my skills in UI/UX design. Beyond the digital world, my artistic background in painting adds a unique touch to my creative approach.</p>
                 </div>
                 <form action="">
                     <button class="btn btn-outline-primary my-2 my-sm-0 ">Download CV <i
@@ -281,17 +321,17 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body text-left">
-                                As a dedicated UI-UX designer at Milesweb India, I have honed my skills to deliver
+                                As a Dedicated UI-UX designer at Milesweb India, I have honed my skills to deliver
                                 seamless user experiences and visually captivating interfaces. My experience extends
                                 to
                                 both in-house projects and various design tasks, including website development,
                                 email
                                 templates, and social media campaigns. <br> <br>
 
-                                <p> My skills include: User-Centered Design, Wireframing & Prototyping, Responsive
+                                <p>My skills include: User-Centered Design, Wireframing & Prototyping, Responsive
                                     Design,
                                     Visual Design, Usability Testing, Information Architecture, Email Template Design,
-                                    Social Media Graphics, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                    Social Media Graphics, Figma, Adobe Photoshop, Adobe Illustrator, UI-Design</p>
                             </div>
                         </div>
                     </div>
@@ -310,17 +350,12 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body text-left">
-                                As a dedicated UI-UX designer at Milesweb India, I have honed my skills to deliver
-                                seamless user experiences and visually captivating interfaces. My experience extends
-                                to
-                                both in-house projects and various design tasks, including website development,
-                                email
-                                templates, and social media campaigns. <br> <br>
+                                During my one-year tenure at Tecsys Solutions Pvt. Ltd., I gained extensive experience as a web designer and developer. I successfully developed over 12 websites, showcasing my skills in designing from scratch, debugging, renovating websites, and creating compelling newsletters. My time at Tecsys Solutions equipped me with a diverse range of capabilities to deliver impactful web solutions.<br> <br>
 
-                                <p> My skills include: User-Centered Design, Wireframing & Prototyping, Responsive
-                                    Design,
-                                    Visual Design, Usability Testing, Information Architecture, Email Template Design,
-                                    Social Media Graphics, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p> My skills include: Responsive Web Development, Web UI Design, Graphic Design, Google Analytics
+                                    , SEO (Search Engine Optimization)
+                                    , Website Testing
+                                    , Website Performance Analysis</p>
                             </div>
                         </div>
                     </div>
@@ -339,17 +374,16 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body text-left">
-                                As a dedicated UI-UX designer at Milesweb India, I have honed my skills to deliver
-                                seamless user experiences and visually captivating interfaces. My experience extends
-                                to
-                                both in-house projects and various design tasks, including website development,
-                                email
-                                templates, and social media campaigns. <br> <br>
+                                During my 1.3-year tenure at Veteran Media LLP as a graphic designer, I honed my skills in packaging design, merchandising, social media design and marketing, as well as digital campaign strategies. My experience also encompasses a strong foundation in graphic design, allowing me to deliver impactful and visually compelling designs<br> <br>
 
-                                <p> My skills include: User-Centered Design, Wireframing & Prototyping, Responsive
-                                    Design,
-                                    Visual Design, Usability Testing, Information Architecture, Email Template Design,
-                                    Social Media Graphics, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                <p> My skills include: Product Design
+                                    , Social Media Graphics
+                                    , Packaging Design
+                                    , Logo Branding
+                                    , Merchandising
+                                    , Stationery Design
+                                    , Product Photography
+                                    , Branding Services</p>
                             </div>
                         </div>
                     </div>
@@ -368,24 +402,37 @@
                         <div id="collapsefor" class="collapse" aria-labelledby="headingfor"
                             data-parent="#accordionExample">
                             <div class="card-body text-left">
-                                a dedicated UI-UX designer at Milesweb India, I have honed my skills to deliver
-                                seamless user experiences and visually captivating interfaces. My experience extends
-                                to
-                                both in-house projects and various design tasks, including website development,
-                                email
-                                templates, and social media campaigns. <br> <br>
+                                🎨 I began my artistic journey at 17, showcasing my talent in five metropolitan art exhibitions, with paintings selling for up to 2 lakhs. I've had the honor of creating portraits for esteemed personalities, including Chief Ministers and celebrities.
 
-                                <p> My skills include: User-Centered Design, Wireframing & Prototyping, Responsive
-                                    Design,
-                                    Visual Design, Usability Testing, Information Architecture, Email Template Design,
-                                    Social Media Graphics, Figma, Adobe Photoshop, Adobe Illustrator</p>
+                                🏆 In my 12th grade, I received three district-level awards for my creative painting and rangoli art. Throughout my bachelor's years, I consistently earned government merit awards for creative and portrait painting, gaining recognition in 2018, 2019, and 2020.<br> <br>
+
+                                <p> My skills include: Portrait Painting
+                                    , Abstract Painting
+                                    , Miniature Art
+                                    , Digital Painting
+                                    , Landscape Painting
+                                    , Watercolor Landscape
+                                    , Artistic Techniques
+                                    , Art Styles
+                                    , Fine Artistry
+                                    , Creative Painting
+                                    , Visual Arts
+                                    , Contemporary Art
+                                    , Impressionist Painting
+                                    , Realistic Portraits
+                                    , Modern Art
+                                    , Traditional Art
+                                    , Mixed Media Art
+                                    , Artistic Expression
+                                    , Artistic Creations
+                                    , Art Portfolio</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- <section id="portfolio" class="container">
             <div class="mx-auto">
                 <a class="btn btn-primary" data-toggle="collapse" href="#all" role="button"
@@ -456,7 +503,7 @@
         <!-- achievements -->
         <section id="achievements" class="my-5 py-5">
             <div class="container">
-                <div class="w-75">
+                <div class="text-center">
                     <h4>Achievements: A Journey of Artistic Brilliance</h4>
                     <p>🎨 At the young age of 17, I showcased my talent through
                         5+ Art Exhibitions in metropolitan cities, selling paintings worth up to 2 lakhs. I even had the
@@ -536,7 +583,7 @@
                 <div class="row footer">
                     <div class="w-100">
                         <div class="workTogether">
-                            <div></div>
+                       
                             <h5>Let's work together</h5>
                         </div>
                         <a href="https://wa.me/7083233905" target="_blank" class="btn">Send Message</a>

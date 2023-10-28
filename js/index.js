@@ -1,5 +1,5 @@
- // Function to change the title and favicon when the tab becomes visible
- function changeTitleAndFavicon() {
+// Function to change the title and favicon when the tab becomes visible
+function changeTitleAndFavicon() {
     document.title = "Yash Web Design | Full Service Digital Freelancer That Drives Revenue";
     document.querySelector("link[rel*='icon']").href = "../media/png/favicon.ico";
 }
@@ -41,24 +41,82 @@ if (document.hidden !== undefined) {
 
 // ------------------------------------------------------------------------------------
 
- // Get all the clickable links by class name
- const clickableLinks = document.querySelectorAll('.btn.btn-primary');
+// Get all the clickable links by class name
+const clickableLinks = document.querySelectorAll('.btn.btn-primary');
 
- // Add click event listeners to each link
- clickableLinks.forEach(link => {
-     link.addEventListener('click', (event) => {
-         event.preventDefault(); // Prevent the default behavior of the link
-         const href = link.getAttribute('href'); // Get the href attribute
+// Add click event listeners to each link
+clickableLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default behavior of the link
+        const href = link.getAttribute('href'); // Get the href attribute
 
-         // Remove the 'show' class from all elements
-         document.querySelectorAll('.collapse').forEach(element => {
-             element.classList.remove('show');
-         });
+        // Remove the 'show' class from all elements
+        document.querySelectorAll('.collapse').forEach(element => {
+            element.classList.remove('show');
+        });
 
-         // Add the 'show' class to the target element with the corresponding ID
-         const targetElement = document.getElementById(href.substring(1)); // Remove the '#' from href
-         if (targetElement) {
-             targetElement.classList.add('show');
-         }
-     });
- });
+        // Add the 'show' class to the target element with the corresponding ID
+        const targetElement = document.getElementById(href.substring(1)); // Remove the '#' from href
+        if (targetElement) {
+            targetElement.classList.add('show');
+        }
+    });
+});
+
+// ---------------------- 50+ Counter -------------------
+const counter = document.getElementById('count');
+const target = 50; // Change this to your target number
+const duration = 2000; // Duration of the animation in milliseconds
+const steps = 50; // Number of steps
+
+const stepValue = target / steps;
+const stepDuration = duration / steps;
+
+let currentCount = 0;
+let step = 0;
+
+function updateCounter() {
+    counter.textContent = Math.floor(currentCount);
+}
+
+function animateCounter() {
+    if (step < steps) {
+        currentCount += stepValue;
+        updateCounter();
+        step++;
+        setTimeout(animateCounter, stepDuration);
+    } else {
+        currentCount = target;
+        updateCounter();
+    }
+}
+
+animateCounter();
+
+
+
+// ---------------- social links show hide ---------
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const linksElement = document.querySelector(".links");
+    const socialLinksElement = document.getElementById("socialLinks");
+    const closeIcon = document.getElementById("closeIcon");
+  
+    // Function to toggle the .visible class
+    function toggleVisibleClass() {
+      socialLinksElement.classList.toggle("visible");
+    }
+    // Add click event listener
+    linksElement.addEventListener("click", toggleVisibleClass);
+  
+    // Add click event listener to close the element
+    closeIcon.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the click from reaching the linksElement
+      socialLinksElement.classList.remove("visible");
+    });
+  });
+  
+
+ 
+

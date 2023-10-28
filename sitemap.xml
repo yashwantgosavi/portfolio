@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://yashwebdesign.com/</loc>
-  <lastmod>2023-10-23T04:27:37+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    <url>
+        <loc>https://yashwebdesign.com/</loc>
+        <lastmod>2023-10-23T04:27:37+00:00</lastmod>
+        <changefreq>monthly</changefreq> <!-- Indicates how often the page is likely to change -->
+        <priority>1.0</priority> <!-- Sets the priority of the page (0.0 to 1.0) -->
+    </url>
+    <!-- Add more URL entries here as needed, with relevant changefreq and priority values -->
 </urlset>

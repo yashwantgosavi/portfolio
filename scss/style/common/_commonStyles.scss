@@ -129,7 +129,7 @@ table {
 
 body {
 	background-color: $bg;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 a {
