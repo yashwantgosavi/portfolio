@@ -120,3 +120,69 @@ animateCounter();
 
  
 
+// ---------------------- type writter ----------------------
+class Typewritter {
+  constructor({ text, time = 500 }) {
+    this.texts = text.split(",");
+    this.sT = document.querySelector(".secondary__title");
+    this.pT = document.querySelector(".primary__title"); // Reference to the primary__title element
+    this.realTime = time; // tiempo real
+    this.wait = time + 1000; // tiempo de espera
+    this.changeTime = 0; // tiempo que usara el intervalo
+    this.length = this.texts.length; // cantidad de letras
+    this.countChar = 0; // contador de letras escritas
+    this.current = 0;
+    this.flag = false;
+
+    this.cutText();
+  }
+
+  cutText() {
+    const text = this.texts[this.current];
+    const tLength = this.texts[this.current].length;
+
+    // tiempo de espera al finalizar la palabra
+    if (this.countChar === tLength) {
+      this.changeTime = this.wait;
+    }
+
+    // cambio de tiempo de retorno
+    if (this.flag && this.countChar === tLength - 1) {
+      this.changeTime = this.realTime / 4;
+    }
+
+    // tiempo real para cada letra desde que comienza la palabra
+    if (this.countChar === 0) {
+      this.changeTime = this.realTime;
+    }
+
+    this.drawText(text.substr(0, this.countChar));
+
+    // If flag is false, increase the counter to continue writing
+    if (!this.flag) {
+      this.countChar++;
+      if (this.countChar === tLength) {
+        this.flag = true;
+      }
+
+      // If flag is true, decrease the counter to remove letters
+    } else if (this.flag) {
+      this.countChar--;
+      if (this.countChar === 0) {
+        this.flag = false;
+        this.current = ++this.current % this.length;
+      }
+    }
+
+    setTimeout(() => this.cutText(), this.changeTime);
+  }
+
+  drawText(chars) {
+    this.sT.innerHTML = chars;
+  }
+}
+
+new Typewritter({
+  text: " Web Developer,  UI-UX Designer, Graphic Designer, Fine Artist",
+  time: 80
+});
