@@ -186,3 +186,28 @@ new Typewritter({
   text: " Web Developer,  UI-UX Designer, Graphic Designer, Fine Artist",
   time: 80
 });
+
+
+// turn of right click 
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+// });
+
+
+
+// download PDF
+function downloadPDF() {
+  // Specify the path to your PDF file in the media folder
+  const pdfFilePath = '../media/pdf/resume.pdf';
+
+  // Create a link element to trigger the download
+  const a = document.createElement('a');
+  a.href = pdfFilePath;
+  a.download = 'downloaded.pdf';
+
+  // Trigger a click event on the link to initiate the download
+  a.click();
+}
+
+// Attach the downloadPDF function to the button's click event
+document.getElementById('downloadButton').addEventListener('click', downloadPDF);

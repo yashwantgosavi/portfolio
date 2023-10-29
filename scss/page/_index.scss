@@ -192,8 +192,8 @@ header {
 
 }
 
-marquee{
-background-color: $black-950;
+marquee {
+    background-color: $black-950;
 }
 
 // Services Section
@@ -424,14 +424,44 @@ background-color: $black-950;
 }
 
 #achievements {
-    .w-75 {
-        h4 {
-            color: $white;
-        }
+    .news {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 
-        p {
-            margin: 2% 0px;
-            line-height: 25px;
+    span {
+        color: $blue;
+        font-weight: bold;
+    }
+
+    img {
+        border-radius: 25px;
+        width: fit-content;
+    }
+
+    h3 {
+        color: $white;
+        font-size: 1.75rem;
+    }
+
+    p {
+        margin: 1% 0px;
+        line-height: 25px;
+    }
+
+    button {
+        border-radius: 25px !important;
+        padding: 10px 16px !important;
+
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
