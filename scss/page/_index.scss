@@ -1,6 +1,10 @@
 header {
     position: relative;
 
+    .container-title {
+        padding-left: 0px;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
@@ -203,6 +207,7 @@ marquee {
     .card {
         background-color: $grey;
         border-radius: 25px;
+        width: 100% !important;
 
         p {
             margin: 15px 0px;
@@ -221,7 +226,7 @@ marquee {
         }
 
         img {
-            width: 30%;
+            width: 25%;
             padding: 25px 0px 0px 25px;
         }
     }
