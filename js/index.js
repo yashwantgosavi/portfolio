@@ -211,3 +211,32 @@ function downloadPDF() {
 
 // Attach the downloadPDF function to the button's click event
 document.getElementById('downloadButton').addEventListener('click', downloadPDF);
+
+
+// website loader
+window.addEventListener('load', function () {
+  const loaderWrapper = document.querySelector('.loader-wrapper');
+  const content = document.querySelector('.content');
+
+  // Function to check if the CDN content has loaded
+  function checkCDNContent() {
+      // Replace 'your-cdn-resource-url' with the actual CDN resource URL you want to check
+      const cdnResource = new Image();
+      cdnResource.src = 'your-cdn-resource-url';
+
+      cdnResource.onload = function () {
+          // CDN content has loaded, hide the loader and display the website content
+          loaderWrapper.style.display = 'none';
+          content.style.display = 'block';
+      };
+
+      // Set a timeout to hide the loader and show the content even if the CDN resource doesn't load
+      setTimeout(function () {
+          loaderWrapper.style.display = 'none';
+          content.style.display = 'block';
+      },1000); // Adjust the timeout duration as needed
+  }
+
+  // Call the function to check the CDN content
+  checkCDNContent();
+});
